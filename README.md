@@ -1,4 +1,4 @@
-# terraform-aws
+# Terraform-aws
 Infrastructure As Code - Sample Terraform- AWS script.
 
 ## Terraform
