@@ -8,7 +8,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami = "${lookup(var.ami, var.region)}"
   instance_type = "t2.micro"
-  key_name = "ppnair-1"
+  key_name = "your_key_name"
   security_groups = [
    "My-SG"
  ]
@@ -25,7 +25,6 @@ resource "aws_instance" "web" {
       type     = "ssh"
       user="${var.INSTANCE_USERNAME}"
       private_key="${file("${var.PATH_TO_PRIVATE_KEY}")}"
-      #private_key = "${file("~/.ssh/id_rsa")}"
   }
 
  tags {

@@ -13,7 +13,7 @@ variable "region" {
 
 
 variable "ami" {
-  Âtype = "map"
+  type = "map"
   default = {
     ap-south-1 = "ami-5b673c34" #Provide your ami ID here
     }
